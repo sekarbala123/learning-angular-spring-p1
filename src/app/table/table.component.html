@@ -1,0 +1,15 @@
+<p>table works!</p>
+
+<table>
+    <tr>
+      <th>Name</th>
+    </tr>
+    @for (item of getTableRows(); track $index) {
+        <tr >
+          <td>{{ $index }}, {{item.name }}</td>
+          
+        </tr>
+        
+
+    }
+  </table>
